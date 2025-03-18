@@ -5,14 +5,14 @@ pipeline {
         //     steps {
         //         checkout([$class: 'GitSCM',
         //             branches: [[name: '*/main']],
-        //             userRemoteConfigs: [[url: 'https://github.com/Jatinsharma159/Jenkins.git']]
+        //             userRemoteConfigs: [[url: 'https://github.com/yugabharathi14916/PES1UG22CS716_Jenkins.git']]
         //         ])
         //     }
         // }
 
         stage('Build') {
             steps {
-                build 'PES2UG19CS159-1'
+                build 'PES1UG22CS716-1'
                 sh 'g++ main.cpp -o output'
             }
         }
